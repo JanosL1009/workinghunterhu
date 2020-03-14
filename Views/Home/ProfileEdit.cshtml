@@ -1,0 +1,380 @@
+﻿@model MVC_WH.Models.JobEnum
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1 class="col-md-12">Profile editing</h1>
+
+<div class="container-fluid WHContent">
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-md-8" style="border-style:solid;">
+
+                
+                <section class="col-md-12" id="profileDatas" style="border-style:solid;border-color:red;">
+                    <div class="container">
+                        <ul class="nav navbar-nav profileEditMenu">
+                            <li class="profileEditMenu"><a href="?m=general">Személyes</a></li>
+                            <li class="profileEditMenu"><a href="?m=school">Iskola</a></li>
+                            <li class="profileEditMenu"><a href="?m=experience">Tapasztalat</a></li>
+                            <li class="profileEditMenu"><a href="?m=awards">Díjak</a></li>
+                            <li class="profileEditMenu"><a href="?m=target">Munka célzása</a></li>
+                        </ul>
+
+                    </div>
+                    
+                    <style>
+                        label.fileUploadBtnL{
+                            padding: 10px;
+                            background: green;
+                            display: table;
+                            color: #fff;
+
+                        }
+
+
+
+                        input[type="file"]#FileInput {
+                            display: none;
+                        }
+                        .hiddenForm{
+                            display: none;
+                        }
+
+                    </style>
+                    <div class="container">
+
+                        @if (Request.QueryString["m"] == "general")
+                        {
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img class="img-rounded" src="~/Content/Img/workinghunter-main-job-img.jpg" alt="asd" width="150" height="150" />
+                                </div>
+
+                                <div class="col-md-8">
+
+                                    @using (Html.BeginForm("UserProfilePictureUpload", "UserProfile", FormMethod.Post))
+                                    {
+                                        <label class="fileUploadBtnL">
+                                            Kép választása
+                                            <input type="file" id="FileInput" size="60">
+                                        </label>
+
+                                        <input type="submit" value="Upload" class="btn btn-default" />
+                                    }
+                                </div>
+
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12"><strong>Keresztnév:</strong>  Jonatán</div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12"><strong>Vezetéknév:</strong>  Alma</div>
+                            </div>
+
+                            <div class="row" id="BirthPlace">
+                                <div class="col-md-8">
+                                    <p><strong>Szuletési hely:</strong><span class="BirthPlaceBox" id="birthplacelabel">Szikszó, Magyarország</span></p>
+                                    @using (Html.BeginForm("BirthPlaceChange", "UserProfile", FormMethod.Post, new { @class = "BirthPlaceForm hiddenForm", id = "BirthPlaceUpdateForm" }))
+                                    {
+                                        <input class="" id="newBirthPlaceCountry" />
+                                        <input class="" id="newBirthPlaceCity" />
+                                        <input type="submit" value="Mentés" class="btn btn-default" id="BirthPlaceBtnSubmit" />
+                                    }
+                                </div>
+                                <div class="col-md-4"><button class="btn-link" id="ChangeBirthPlace">Változtatás</button></div>
+                            </div>
+
+                            <div class="row" id="CurrentPlace">
+                                <div class="col-md-8">
+                                    <p><strong>Lakhely:</strong><span class="CurrentPlaceBox" id="currentplacelabel">Budapest, Magyarország</span></p>
+                                    @using (Html.BeginForm("BirthPlaceChange", "UserProfile", FormMethod.Post, new { @class = "CurrentPlaceForm hiddenForm", id = "CurrentPlaceUpdateForm" }))
+                                    {
+                                        <input class="" id="newCurrentPlaceCountry" />
+                                        <input class="" id="newCurrentPlaceCity" />
+                                        <input type="submit" value="Mentés" class="btn btn-default" id="CurrentPlaceBtnSubmit" />
+                                    }
+                                </div>
+                                <div class="col-md-4"><button class="btn-link" id="ChangeCurrentPlace">Változtatás</button></div>
+                            </div>
+
+
+                            <div class="row" id="PhoneNumber">
+                                <div class="col-md-8">
+                                    <p><strong>Telefonszám:</strong><span class="CurrentPlaceBox" id="phonenumberlabel">06 20 555 5555</span></p>
+                                    @using (Html.BeginForm("PhoneNumberChange", "UserProfile", FormMethod.Post, new { @class = "PhoneNumberForm hiddenForm", id = "PhoneNumberUpdateForm" }))
+                                    {
+                                        <input class="" id="newPhoneNumber" />
+                                        <input type="submit" value="Mentés" class="btn btn-default" id="PhoneNumberBtnSubmit" />
+                                    }
+
+                                </div>
+
+                                <div class="col-md-4"><button class="btn-link" id="ChangeCurrentPlace">Változtatás</button></div>
+
+                            </div>
+
+
+                            <div class="row" id="PhoneNumber">
+                                <div class="col-md-8">
+                                    <p><strong>Telefonszám:</strong><span class="PhoneNumberBox" id="phonenumberlabel">06 20 555 5555</span></p>
+                                    @using (Html.BeginForm("PhoneNumberChange", "UserProfile", FormMethod.Post, new { @class = "PhoneNumberForm hiddenForm", id = "PhoneNumberUpdateForm" }))
+                                    {
+                                        <input class="" id="newPhoneNumber" />
+                                        <input type="submit" value="Mentés" class="btn btn-default" id="PhoneNumberBtnSubmit" />
+                                    }
+
+                                </div>
+
+                                <div class="col-md-4"><button class="btn-link" id="ChangePhoneNumber">Változtatás</button></div>
+
+                            </div>
+
+                            <div class="row" id="EmailContact">
+                                <div class="col-md-8">
+                                    <p><strong>E-mail:</strong><span class="EmailContactBox" id="emailcontactlabel">pedlaemail@test.com</span></p>
+                                    @using (Html.BeginForm("EmailContactChange", "UserProfile", FormMethod.Post, new { @class = "EmailContactForm hiddenForm", id = "EmailContactUpdateForm" }))
+                                    {
+                                        <input class="" id="newEmailContact" />
+                                        <input type="submit" value="Mentés" class="btn btn-default" id="EmailContactBtnSubmit" />
+                                    }
+
+                                </div>
+
+                                <div class="col-md-4"><button class="btn-link" id="ChangeEmailContact">Változtatás</button></div>
+
+                            </div>
+
+                            <div class="row" id="FbUrl">
+                                <div class="col-md-8">
+                                    <p><strong>Facebook URL:</strong><span class="FbUrlBox" id="fburllabel">https://www.facebook.com/tesztuser54548587</span></p>
+                                    @using (Html.BeginForm("FbUrlChange", "UserProfile", FormMethod.Post, new { @class = "FbUrlForm hiddenForm", id = "FbUrlUpdateForm" }))
+                                    {
+                                        <input  id="newFbUrl" name="newFbUrl" class="form-control"/> <input type="hidden" id="worker" name="worker" value="185" />
+                                        <input type="submit" value="Mentés" class="btn btn-default" id="FbUrlBtnSubmit" />
+                                    }
+
+                                </div>
+
+                                <div class="col-md-4"><button class="btn-link" id="ChangeFbUrl">Változtatás</button></div>
+
+                            </div>
+
+
+
+                        }
+
+                        @if (Request.QueryString["m"] == "school")
+                        {
+                            <div class="row">
+                                <div class="col-md-10">
+                                    <p>@Html.Label("Szemere Bertalan Szakképző és Szakiskola",new { @class = "schoolLabel" })</p>
+                                    <p>@Html.Label("Electrotechnika - érettségi", new { @class = "schoolLabel2" })</p>
+                                    <p class="schoolYearLabel">@Html.Label("2010", new { @class = "schoolYearLabel" })</p>
+                                </div>
+
+                                <div class="col-md-2">
+                                    <span class="deleteLabel" id="SchoolDeleteBtn">Törlés</span>
+                                </div>
+
+                            </div>
+                            <hr />
+                            <div class="row">
+                                <div class="col-md-10">
+                                    <p>@Html.Label("Valamilyen Egyetem", new { @class = "schoolLabel" })</p>
+                                    <p>@Html.Label("Valamilyen szak", new { @class = "schoolLabel2" })</p>
+                                    <p class="schoolYearLabel">@Html.Label("2017", new { @class = "schoolYearLabel" })</p>
+                                </div>
+
+                                <div class="col-md-2">
+                                    <span class="deleteLabel" id="SchoolDeleteBtn" data-schoolid="1">Törlés</span>
+                                </div>
+
+                            </div>
+
+
+                        }
+
+                        @if (Request.QueryString["m"] == "experience")
+                        {
+
+
+                        }
+
+                        @if (Request.QueryString["m"] == "awards")
+                        {
+
+
+                        }
+
+                        @if (Request.QueryString["m"] == "target")
+                        {
+                            using (Html.BeginForm("SaveTarget", "UserProfile", FormMethod.Post, new { @class = "12" , id = "SaveTargetForm" }))
+                            {
+
+                            <p><strong>Határozd meg, hogy milyen munkakörben szeretnél dolgozni!</strong></p>
+                            <p><label>Iparág:</label></p>
+                            <select class="form-control" id="WorkType">
+                                <option Selected="True" Value="0"> Adminisztráció </option>
+                                <option Value="2">Bankügy</option>
+                                <option Value="3">Biztonság és védelem </option>
+                                <option Value="4">Cégvezetés</option>
+                                <option Value="5">Egészségügy és szociális ellátás</option>
+                                <option Value="6">Electrotechnika és energetika</option>
+                                <option Value="7">Értékesítés, és kereskedelem</option>
+                                <option Value="8">Fordítás és tolmácsolás</option>
+                                <option Value="9">Gépipar</option>
+                                <option Value="10">Gyártás, termelés</option>
+                                <option Value="11">Gyógyszeripar</option>
+                                <option Value="12">HR, emberi erőforrások</option>
+                                <option Value="13">IT</option>
+                                <option Value="14">Média</option>
+                                <option Value="15">Közigazgatás, pénzügy, könyvelés</option>
+                                <option Value="16">Marketing, reklám, pr</option>
+                                <option Value="17">Menedzsment</option>
+                                <option Value="18">Minőség menedzsment</option>
+                                <option Value="19">Oktatás, képzés</option>
+                                <option Value="20">Tudomány, kutatás</option>
+                                <option Value="21">Logisztika</option>
+                                <option Value="22">Telekommunikáció</option>
+                                <option Value="23">Ügyféltámogatás</option>
+                                <option Value="24">Vegyipar</option>
+                                <option Value="25">Túrizmus, vendéglátás</option>
+                                <option Value="24">Környezetvédelem</option>
+
+                            </select>
+                            <!--
+                            @Html.DropDownList("MovieType")
+                                -->
+
+                            <p><label>Ország</label></p>
+                            <select class="form-control" id="CountrySelect" onchange="CitiesLoader();">
+                                <option selected="selected" value="0">V&#225;lassz orsz&#225;got</option>
+                                <option value="1">Magyarorsz&#225;g</option>
+                                <option value="2">Anglia</option>
+                                <option value="3">Egyes&#252;lt &#193;llamok</option>
+                                <option value="14">Szlov&#225;kia</option>
+
+                            </select>
+
+                            <p><label>Város</label></p>
+                            <input id="SelectedCity"  name="SelectedCity" class="form-control" />
+
+                            <p>Tapasztalat:</p>
+                            <select class="form-control" id="JobExperienceSelect">
+                                <option value="0">0 - 1</option>
+                                <option value="1">1 - 3</option>
+                                <option value="2">3 - 5</option>
+                                <option value="3">5+</option>
+                            </select> 
+
+                            <p>Fizetés igény:</p>
+                            <input ID="MinPay" Columns="2" name="minpay" class="form-control" />
+                           <select id="targetbasemoney" class="form-control">
+                    	        <option value="1">EUR</option>  
+                    	        <option value="2">USD</option>
+                    	        <option value="3">GBP</option>  
+                    	        <option value="4">HUF</option>
+                            </select> 
+
+
+
+
+
+                            <p><label>Skills:</label></p>
+                            <input class="form-control" id="skillsBox" />
+
+                            <p><label>More details previous experiences (work, positions, experiences, etc ...).</label></p>
+
+                            <textarea class="form-control" id="moreDetailsMyJobExp" rows="10" cols="50"></textarea>
+
+                            <input type="submit" value="Mentés" class="form-control" id="TargetSaveBtnSubmit" />
+
+                            }//beginform end
+
+
+                        }
+
+
+
+</div>
+                </section>
+
+
+            </div>
+
+            <div class="col-md-4" style="border-style:dotted;">
+                <!-- menu begin --> 
+                <!--menu end, begin the Shares btns-->
+
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+<div class="container-fluid WHContent">
+    <div class="container">
+        <div class="row">
+
+            <footer class="col-md-12" style="border-style:solid;border-color:red;">
+
+
+            </footer>
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+    $("#ChangeBirthPlace").click(function () {
+        $("#birthplacelabel").hide(); $("#BirthPlaceUpdateForm").show(); $("#ChangeBirthPlace").html("Mégse").addClass("cancel").click(function () { window.location.reload(true);});
+    });
+    $("#ChangeCurrentPlace").click(function () {
+        $("#currentplacelabel").hide(); $("#CurrentPlaceUpdateForm").show(); $("#ChangeCurrentPlace").html("Mégse").addClass("cancel").click(function () { window.location.reload(true); });
+    });
+
+    $("#ChangeFbUrl").click(function () {
+        $("#fburllabel").hide(); $("#FbUrlUpdateForm").show(); $("#ChangeFbUrl").html("Mégse").addClass("cancel").click(function () { window.location.reload(true); });
+    });
+
+</script>
+<script>
+    function CitiesLoader() {
+        var CountryID = $("select#CountrySelect option:selected").val();
+        console.log("Választott: " + CountryID);
+        var d = '{"countryID" :"' + CountryID + '"}';
+        $(function () {
+            $.ajax({
+                type: "POST",
+                url: "/UserProfile/GetCities",
+                data: d,
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (r) {
+                    $(function () {
+                        var availableTags = [];
+                        $.each(r.d, function () {
+                            availableTags.push(this['Text']);
+                        });
+                        $("#SelectedCity").autocomplete({
+                            source: availableTags
+                        });
+                    });
+
+                }
+            });
+        });
+    }
+</script>
+
+
+
+

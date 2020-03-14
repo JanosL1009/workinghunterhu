@@ -1,0 +1,20 @@
+﻿@model MVC_WH.Models.ProfileEditModels
+
+@{
+    ViewBag.Title = "About";
+//Minta, hogy a többit hogyan ell majd felépíteni! :D
+}
+
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+<p>Use this area to provide additional information.</p>
+
+@using (Html.BeginForm("TestProfile", "UserProfile", FormMethod.Post))
+{
+    @Html.LabelFor(model => model.TextToHtml)
+    @Html.TextBoxFor(model => model.TextToHtml)
+    @Html.ValidationMessageFor(model => model.TextToHtml)
+    <button type="submit">Save</button>
+}
+ 

@@ -1,0 +1,155 @@
+c:\users\jános\source\repos\MVC_WH\MVC_WH\bin\ApplicationInsights.config
+c:\users\jános\source\repos\MVC_WH\MVC_WH\bin\MVC_WH.dll.config
+c:\users\jános\source\repos\MVC_WH\MVC_WH\bin\MVC_WH.dll
+c:\users\jános\source\repos\MVC_WH\MVC_WH\bin\MVC_WH.pdb
+c:\users\jános\source\repos\MVC_WH\MVC_WH\bin\Antlr3.Runtime.dll
+c:\users\jános\source\repos\MVC_WH\MVC_WH\bin\EntityFramework.dll
+c:\users\jános\source\repos\MVC_WH\MVC_WH\bin\EntityFramework.SqlServer.dll
+c:\users\jános\source\repos\MVC_WH\MVC_WH\bin\Microsoft.AI.Agent.Intercept.dll
+c:\users\jános\source\repos\MVC_WH\MVC_WH\bin\Microsoft.AI.DependencyCollector.dll
+c:\users\jános\source\repos\MVC_WH\MVC_WH\bin\Microsoft.AI.PerfCounterCollector.dll
+c:\users\jános\source\repos\MVC_WH\MVC_WH\bin\Microsoft.AI.ServerTelemetryChannel.dll
+c:\users\jános\source\repos\MVC_WH\MVC_WH\bin\Microsoft.AI.Web.dll
+c:\users\jános\source\repos\MVC_WH\MVC_WH\bin\Microsoft.AI.WindowsServer.dll
+c:\users\jános\source\repos\MVC_WH\MVC_WH\bin\Microsoft.ApplicationInsights.dll
+c:\users\jános\source\repos\MVC_WH\MVC_WH\bin\Microsoft.AspNet.Identity.Core.dll
+c:\users\jános\source\repos\MVC_WH\MVC_WH\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+c:\users\jános\source\repos\MVC_WH\MVC_WH\bin\Microsoft.AspNet.Identity.Owin.dll
+c:\users\jános\source\repos\MVC_WH\MVC_WH\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\jános\source\repos\MVC_WH\MVC_WH\bin\Microsoft.Owin.dll
+c:\users\jános\source\repos\MVC_WH\MVC_WH\bin\Microsoft.Owin.Host.SystemWeb.dll
+c:\users\jános\source\repos\MVC_WH\MVC_WH\bin\Microsoft.Owin.Security.Cookies.dll
+c:\users\jános\source\repos\MVC_WH\MVC_WH\bin\Microsoft.Owin.Security.dll
+c:\users\jános\source\repos\MVC_WH\MVC_WH\bin\Microsoft.Owin.Security.Facebook.dll
+c:\users\jános\source\repos\MVC_WH\MVC_WH\bin\Microsoft.Owin.Security.Google.dll
+c:\users\jános\source\repos\MVC_WH\MVC_WH\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+c:\users\jános\source\repos\MVC_WH\MVC_WH\bin\Microsoft.Owin.Security.OAuth.dll
+c:\users\jános\source\repos\MVC_WH\MVC_WH\bin\Microsoft.Owin.Security.Twitter.dll
+c:\users\jános\source\repos\MVC_WH\MVC_WH\bin\Microsoft.Web.Infrastructure.dll
+c:\users\jános\source\repos\MVC_WH\MVC_WH\bin\Newtonsoft.Json.dll
+c:\users\jános\source\repos\MVC_WH\MVC_WH\bin\Owin.dll
+c:\users\jános\source\repos\MVC_WH\MVC_WH\bin\System.Net.Http.Formatting.dll
+c:\users\jános\source\repos\MVC_WH\MVC_WH\bin\System.Web.Helpers.dll
+c:\users\jános\source\repos\MVC_WH\MVC_WH\bin\System.Web.Http.dll
+c:\users\jános\source\repos\MVC_WH\MVC_WH\bin\System.Web.Http.WebHost.dll
+c:\users\jános\source\repos\MVC_WH\MVC_WH\bin\System.Web.Mvc.dll
+c:\users\jános\source\repos\MVC_WH\MVC_WH\bin\System.Web.Optimization.dll
+c:\users\jános\source\repos\MVC_WH\MVC_WH\bin\System.Web.Razor.dll
+c:\users\jános\source\repos\MVC_WH\MVC_WH\bin\System.Web.WebPages.Deployment.dll
+c:\users\jános\source\repos\MVC_WH\MVC_WH\bin\System.Web.WebPages.dll
+c:\users\jános\source\repos\MVC_WH\MVC_WH\bin\System.Web.WebPages.Razor.dll
+c:\users\jános\source\repos\MVC_WH\MVC_WH\bin\WebGrease.dll
+c:\users\jános\source\repos\MVC_WH\MVC_WH\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\jános\source\repos\MVC_WH\MVC_WH\bin\System.Web.Helpers.xml
+c:\users\jános\source\repos\MVC_WH\MVC_WH\bin\System.Web.Mvc.xml
+c:\users\jános\source\repos\MVC_WH\MVC_WH\bin\System.Web.Optimization.xml
+c:\users\jános\source\repos\MVC_WH\MVC_WH\bin\System.Web.Razor.xml
+c:\users\jános\source\repos\MVC_WH\MVC_WH\bin\System.Web.WebPages.xml
+c:\users\jános\source\repos\MVC_WH\MVC_WH\bin\System.Web.WebPages.Deployment.xml
+c:\users\jános\source\repos\MVC_WH\MVC_WH\bin\System.Web.WebPages.Razor.xml
+c:\users\jános\source\repos\MVC_WH\MVC_WH\bin\Antlr3.Runtime.pdb
+c:\users\jános\source\repos\MVC_WH\MVC_WH\bin\Newtonsoft.Json.xml
+c:\users\jános\source\repos\MVC_WH\MVC_WH\bin\System.Net.Http.Formatting.xml
+c:\users\jános\source\repos\MVC_WH\MVC_WH\bin\System.Web.Http.xml
+c:\users\jános\source\repos\MVC_WH\MVC_WH\bin\System.Web.Http.WebHost.xml
+c:\users\jános\source\repos\MVC_WH\MVC_WH\bin\EntityFramework.xml
+c:\users\jános\source\repos\MVC_WH\MVC_WH\bin\EntityFramework.SqlServer.xml
+c:\users\jános\source\repos\MVC_WH\MVC_WH\bin\Microsoft.AspNet.Identity.Core.xml
+c:\users\jános\source\repos\MVC_WH\MVC_WH\bin\Microsoft.AspNet.Identity.Owin.xml
+c:\users\jános\source\repos\MVC_WH\MVC_WH\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+c:\users\jános\source\repos\MVC_WH\MVC_WH\bin\Microsoft.Owin.xml
+c:\users\jános\source\repos\MVC_WH\MVC_WH\bin\Microsoft.Owin.Host.SystemWeb.xml
+c:\users\jános\source\repos\MVC_WH\MVC_WH\bin\Microsoft.Owin.Security.xml
+c:\users\jános\source\repos\MVC_WH\MVC_WH\bin\Microsoft.Owin.Security.Facebook.xml
+c:\users\jános\source\repos\MVC_WH\MVC_WH\bin\Microsoft.Owin.Security.Cookies.xml
+c:\users\jános\source\repos\MVC_WH\MVC_WH\bin\Microsoft.Owin.Security.OAuth.xml
+c:\users\jános\source\repos\MVC_WH\MVC_WH\bin\Microsoft.Owin.Security.Google.xml
+c:\users\jános\source\repos\MVC_WH\MVC_WH\bin\Microsoft.Owin.Security.Twitter.xml
+c:\users\jános\source\repos\MVC_WH\MVC_WH\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+c:\users\jános\source\repos\MVC_WH\MVC_WH\bin\Microsoft.ApplicationInsights.xml
+c:\users\jános\source\repos\MVC_WH\MVC_WH\bin\Microsoft.AI.DependencyCollector.xml
+c:\users\jános\source\repos\MVC_WH\MVC_WH\bin\Microsoft.AI.ServerTelemetryChannel.xml
+c:\users\jános\source\repos\MVC_WH\MVC_WH\bin\Microsoft.AI.WindowsServer.xml
+c:\users\jános\source\repos\MVC_WH\MVC_WH\bin\Microsoft.AI.Web.xml
+c:\users\jános\source\repos\MVC_WH\MVC_WH\obj\Debug\MVC_WH.csprojResolveAssemblyReference.cache
+c:\users\jános\source\repos\MVC_WH\MVC_WH\obj\Debug\MVC_WH.csproj.CoreCompileInputs.cache
+c:\users\jános\source\repos\MVC_WH\MVC_WH\obj\Debug\MVC_WH.dll
+c:\users\jános\source\repos\MVC_WH\MVC_WH\obj\Debug\MVC_WH.pdb
+E:\Sajat melok\MVC_WH\MVC_WH\bin\ApplicationInsights.config
+E:\Sajat melok\MVC_WH\MVC_WH\bin\MVC_WH.dll.config
+E:\Sajat melok\MVC_WH\MVC_WH\bin\MVC_WH.dll
+E:\Sajat melok\MVC_WH\MVC_WH\bin\MVC_WH.pdb
+E:\Sajat melok\MVC_WH\MVC_WH\bin\Antlr3.Runtime.dll
+E:\Sajat melok\MVC_WH\MVC_WH\bin\EntityFramework.dll
+E:\Sajat melok\MVC_WH\MVC_WH\bin\EntityFramework.SqlServer.dll
+E:\Sajat melok\MVC_WH\MVC_WH\bin\Microsoft.AI.Agent.Intercept.dll
+E:\Sajat melok\MVC_WH\MVC_WH\bin\Microsoft.AI.DependencyCollector.dll
+E:\Sajat melok\MVC_WH\MVC_WH\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\Sajat melok\MVC_WH\MVC_WH\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\Sajat melok\MVC_WH\MVC_WH\bin\Microsoft.AI.Web.dll
+E:\Sajat melok\MVC_WH\MVC_WH\bin\Microsoft.AI.WindowsServer.dll
+E:\Sajat melok\MVC_WH\MVC_WH\bin\Microsoft.ApplicationInsights.dll
+E:\Sajat melok\MVC_WH\MVC_WH\bin\Microsoft.AspNet.Identity.Core.dll
+E:\Sajat melok\MVC_WH\MVC_WH\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Sajat melok\MVC_WH\MVC_WH\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\Sajat melok\MVC_WH\MVC_WH\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Sajat melok\MVC_WH\MVC_WH\bin\Microsoft.Owin.dll
+E:\Sajat melok\MVC_WH\MVC_WH\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\Sajat melok\MVC_WH\MVC_WH\bin\Microsoft.Owin.Security.Cookies.dll
+E:\Sajat melok\MVC_WH\MVC_WH\bin\Microsoft.Owin.Security.dll
+E:\Sajat melok\MVC_WH\MVC_WH\bin\Microsoft.Owin.Security.Facebook.dll
+E:\Sajat melok\MVC_WH\MVC_WH\bin\Microsoft.Owin.Security.Google.dll
+E:\Sajat melok\MVC_WH\MVC_WH\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\Sajat melok\MVC_WH\MVC_WH\bin\Microsoft.Owin.Security.OAuth.dll
+E:\Sajat melok\MVC_WH\MVC_WH\bin\Microsoft.Owin.Security.Twitter.dll
+E:\Sajat melok\MVC_WH\MVC_WH\bin\Microsoft.Web.Infrastructure.dll
+E:\Sajat melok\MVC_WH\MVC_WH\bin\Newtonsoft.Json.dll
+E:\Sajat melok\MVC_WH\MVC_WH\bin\Owin.dll
+E:\Sajat melok\MVC_WH\MVC_WH\bin\System.Net.Http.Formatting.dll
+E:\Sajat melok\MVC_WH\MVC_WH\bin\System.Web.Helpers.dll
+E:\Sajat melok\MVC_WH\MVC_WH\bin\System.Web.Http.dll
+E:\Sajat melok\MVC_WH\MVC_WH\bin\System.Web.Http.WebHost.dll
+E:\Sajat melok\MVC_WH\MVC_WH\bin\System.Web.Mvc.dll
+E:\Sajat melok\MVC_WH\MVC_WH\bin\System.Web.Optimization.dll
+E:\Sajat melok\MVC_WH\MVC_WH\bin\System.Web.Razor.dll
+E:\Sajat melok\MVC_WH\MVC_WH\bin\System.Web.WebPages.Deployment.dll
+E:\Sajat melok\MVC_WH\MVC_WH\bin\System.Web.WebPages.dll
+E:\Sajat melok\MVC_WH\MVC_WH\bin\System.Web.WebPages.Razor.dll
+E:\Sajat melok\MVC_WH\MVC_WH\bin\WebGrease.dll
+E:\Sajat melok\MVC_WH\MVC_WH\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Sajat melok\MVC_WH\MVC_WH\bin\System.Web.Helpers.xml
+E:\Sajat melok\MVC_WH\MVC_WH\bin\System.Web.Mvc.xml
+E:\Sajat melok\MVC_WH\MVC_WH\bin\System.Web.Optimization.xml
+E:\Sajat melok\MVC_WH\MVC_WH\bin\System.Web.Razor.xml
+E:\Sajat melok\MVC_WH\MVC_WH\bin\System.Web.WebPages.xml
+E:\Sajat melok\MVC_WH\MVC_WH\bin\System.Web.WebPages.Deployment.xml
+E:\Sajat melok\MVC_WH\MVC_WH\bin\System.Web.WebPages.Razor.xml
+E:\Sajat melok\MVC_WH\MVC_WH\bin\Antlr3.Runtime.pdb
+E:\Sajat melok\MVC_WH\MVC_WH\bin\Newtonsoft.Json.xml
+E:\Sajat melok\MVC_WH\MVC_WH\bin\System.Net.Http.Formatting.xml
+E:\Sajat melok\MVC_WH\MVC_WH\bin\System.Web.Http.xml
+E:\Sajat melok\MVC_WH\MVC_WH\bin\System.Web.Http.WebHost.xml
+E:\Sajat melok\MVC_WH\MVC_WH\bin\EntityFramework.xml
+E:\Sajat melok\MVC_WH\MVC_WH\bin\EntityFramework.SqlServer.xml
+E:\Sajat melok\MVC_WH\MVC_WH\bin\Microsoft.AspNet.Identity.Core.xml
+E:\Sajat melok\MVC_WH\MVC_WH\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\Sajat melok\MVC_WH\MVC_WH\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Sajat melok\MVC_WH\MVC_WH\bin\Microsoft.Owin.xml
+E:\Sajat melok\MVC_WH\MVC_WH\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\Sajat melok\MVC_WH\MVC_WH\bin\Microsoft.Owin.Security.xml
+E:\Sajat melok\MVC_WH\MVC_WH\bin\Microsoft.Owin.Security.Facebook.xml
+E:\Sajat melok\MVC_WH\MVC_WH\bin\Microsoft.Owin.Security.Cookies.xml
+E:\Sajat melok\MVC_WH\MVC_WH\bin\Microsoft.Owin.Security.OAuth.xml
+E:\Sajat melok\MVC_WH\MVC_WH\bin\Microsoft.Owin.Security.Google.xml
+E:\Sajat melok\MVC_WH\MVC_WH\bin\Microsoft.Owin.Security.Twitter.xml
+E:\Sajat melok\MVC_WH\MVC_WH\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\Sajat melok\MVC_WH\MVC_WH\bin\Microsoft.ApplicationInsights.xml
+E:\Sajat melok\MVC_WH\MVC_WH\bin\Microsoft.AI.DependencyCollector.xml
+E:\Sajat melok\MVC_WH\MVC_WH\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\Sajat melok\MVC_WH\MVC_WH\bin\Microsoft.AI.WindowsServer.xml
+E:\Sajat melok\MVC_WH\MVC_WH\bin\Microsoft.AI.Web.xml
+E:\Sajat melok\MVC_WH\MVC_WH\obj\Debug\MVC_WH.csprojAssemblyReference.cache
+E:\Sajat melok\MVC_WH\MVC_WH\obj\Debug\MVC_WH.csproj.CoreCompileInputs.cache
+E:\Sajat melok\MVC_WH\MVC_WH\obj\Debug\MVC_WH.csproj.CopyComplete
+E:\Sajat melok\MVC_WH\MVC_WH\obj\Debug\MVC_WH.dll
+E:\Sajat melok\MVC_WH\MVC_WH\obj\Debug\MVC_WH.pdb

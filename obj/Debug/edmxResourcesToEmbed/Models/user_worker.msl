@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="workinghunterModel1StoreContainer" CdmEntityContainer="workinghunterEntities1">
+    <EntitySetMapping Name="user_worker">
+      <EntityTypeMapping TypeName="workinghunterModel1.user_worker">
+        <MappingFragment StoreEntitySet="user_worker">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="lastName" ColumnName="lastName" />
+          <ScalarProperty Name="firstName" ColumnName="firstName" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="pwd" ColumnName="pwd" />
+          <ScalarProperty Name="salt" ColumnName="salt" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

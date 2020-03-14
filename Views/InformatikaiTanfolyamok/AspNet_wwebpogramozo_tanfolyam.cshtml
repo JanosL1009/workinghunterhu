@@ -1,0 +1,143 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="container">
+
+    <div class="container LeftContainer">
+        <div class="row">
+            <div class="col-sm-8" id="boxContent">
+                <h1>ASP.NET webfejlesztő tanfolyam - online + 80 óra gyakorlat</h1>
+                <table class="infoTable">
+                    <tr>
+                        <td>Gaykorlati órák száma:</td>
+                        <td>80</td>
+                    </tr>
+                    <tr>
+                        <td>Online kurzus:</td>
+                        <td>Igen</td>
+                    </tr>
+                    <tr>
+                        <td>Nem OKJ tanfolyam!</td>
+                        <td>Tanúsítvány jár a képzés végén, amennyiben sikeresen vizsgázott!</td>
+                    </tr>
+                    <tr>
+                        <td>Teljes ár:</td>
+                        <td>114 900FT</td>
+                    </tr>
+                </table>
+
+                <h3 class="topSpace25">A C# programozói tanfolyam időpontok</h3>
+
+                <table class=" leftCol topSpace25">
+                    <tr>
+                        <td colspan="2">
+                            2018.11.07(Hétfő) Hétfő, Szerda (17:00h - 20:15h) 11hét
+                        </td>
+                    </tr>
+                </table>
+
+
+                <p class="topSpace25">Helyszín: 1139 Budapest, Frangepán utca</p>
+
+                <img class="img-thumbnail topSpace25" src="~/Content/Img/asp-dot-net-webprogramozasi-tanfolyam.jpg" alt="PHP-webprogramozo-tanfolyam" title="Csatlakozz Te is a PHP webfejlesztők közé!" />
+
+                <h3>ASP.NET webfejlesztő tanfolyam tematikája</h3>
+
+                <section id="thematics">
+                    <details>
+                        <summary>ASP.NET Web Forms</summary>
+                        <p class="mgl30">Bevezetés az ASP.NET-be</p>
+                        <p class="mgl30">ASP.NET Web Forms jellemzői</p>
+                        <p class="mgl30">Kód szeperació, Page Class, Page Direktíva,Master Page, Attribútomok</p>
+                        <p class="mgl30">Web Controllok </p>
+                        <p class="mgl30">Munka az adatbázisokkal – SqlDataSource</p>
+                        <p class="mgl30">ASP.NET Validation Controls – Validációs Vezérlők</p>
+                        <p class="mgl30">ASP.NET Data Binding – Adatkötés</p>
+                        <p class="mgl30">ASP.NET Ajax Controls </p>
+                    </details>
+
+                    <details>
+                        <summary>ASP.NET MVC</summary>
+                        <p class="mgl30">Az MVC szerkezeti minta bemutatása</p>
+                        <p class="mgl30">Model, Views, Controllers</p>
+                        <p class="mgl30">Routes, Controllers</p>
+                        <p class="mgl30">Actions és a paraméterek</p>
+                        <p class="mgl30">Razor Views</p>
+                        <p class="mgl30">AJAX</p>
+                        <p class="mgl30">Autentikáció, autorizáció</p>
+                        <p class="mgl30">Cache és Resources</p>
+                    </details>
+
+                </section>
+
+                <h3>Az ASP.NET fejlesztői tanfolyamról</h3>
+                <section id="pre">
+                    <p>
+                        <b>
+                            Az elméleti oktatás online alapú, rengeteg kóddal, tesztel és videóval ellátva. Ez a kurzus nem kezdőknek lett meghirdetve, ezért a jelentkezéshez a következő technológiák ismerete szükséges:
+                        </b>
+                    </p>
+
+                    <ul>
+                        <li>HTML/HTML5</li>
+                        <li>CSS/CSS3</li>
+                        <li>C# nyelv ismerete</li>
+                    </ul>
+
+                    <p>Szükséges képzettség a tanfolyamra való jelentkezésre:</p>
+                    <ul>
+                        <li>Szoftver- vagy webfejlesztéshez kapcsolódó OKJ vagy magasabb végzettség</li>
+                        <li>A Workinghunternél elvégzett @Html.ActionLink("C# programozó tanfolyam", "Csharp_Programozo_Tanfolyam", "InformatikaiTanfolyamok") </li>
+                        <li></li>
+                    </ul>
+
+                    <p>
+                        A 40 gyakorlati óra, kontakt óra lesz. Az oktató, mentor segítségével komplett alkalmazásokat fogunk készíteni.
+
+                    </p>
+                    <p>Az elkészített alkalmazások jelentős része ügyviteli lesz, de meg tanuljuk az Operációs rendszer diagnosztikai rendszerét is elérni! </p>
+                    <p>Megismerkedünk néhány programtervezési mintával, az adatbázis kezeléssel, valamint a Windows Forms alapjaival.</p>
+
+                    <p><b>Válaszd a Workinghunter programozó tanfolyamát!</b></p>
+                    <!--
+                    <section id="plus">
+                        <b>Ne érd be az alap tudással!</b>
+                        <p>Online képzéssel biztosítjuk a következő technológiák megismerését, elsajátítását:</p>
+
+                    </section>
+                        -->
+                </section>
+
+
+              
+                <a href="/InformatikaiTanfolyamok/jelentkezes_informatikai_tanfolyamra?tanfolyam=csharp80atipikus" class="btn btn-danger" id="tanfolyamJelentkezoGomb">Jelentkezek</a>
+
+            </div>
+            
+            <div class="col-sm-4">
+                @Html.Partial("_TanfolyamOldalsoMenu")
+
+
+            </div>
+
+
+        </div>
+
+
+
+
+
+    </div>
+
+</div>
+
+<script>
+    $(document).ready(function () {
+        let divWidth = $("#boxContent").width(); let threePercent = (divWidth / 100) * 5;
+        let btnLeftPos = (divWidth / 2) - threePercent; $("#tanfolyamJelentkezoGomb").css("position", "relative").css("left", btnLeftPos); 
+        console.log("Szélesség: " + btnLeftPos);
+                });
+</script>
+

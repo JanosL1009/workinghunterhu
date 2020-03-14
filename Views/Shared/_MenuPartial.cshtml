@@ -1,0 +1,11 @@
+﻿@using Microsoft.AspNet.Identity
+@if (Request.IsAuthenticated)
+{
+    <ul class="nav navbar-nav">
+        <li>@Html.ActionLink("Profile", "ProfileEdit", "Home")</li>
+        <li>@Html.ActionLink("JobTarget", "JobTarget", "Home")</li>
+        <li>@Html.ActionLink("Search", "Search", "Home")</li>
+        <li>@Html.ActionLink("Statistics", "Statistics", "Home")</li>
+    </ul>
+}
+

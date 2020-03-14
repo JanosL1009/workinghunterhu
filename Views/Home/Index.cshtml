@@ -1,0 +1,49 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div>
+    
+    <img class="img-thumbnail" src="~/Content/Img/workinghunter-main-job-img.jpg" style="margin:0 auto;" />
+    @Html.ActionLink("Register", "Register", "Account", routeValues: null, htmlAttributes: new { @class = "btn btn-primary btn-lg regBtnPos" })
+   <!-- <p><a href="www.workinghunter.com" class="btn btn-primary btn-lg regBtnPos">Regisztráció</a></p> -->
+</div>
+
+<div class="row">
+    <div class="col-md-10">
+        <h2>Válts, kezdj, építs Karriert!</h2>
+        <p>
+            Vadászd le, álmaid Állását! A Workinghunter új lehetőségeket biztosít Neked!
+        </p>
+       
+    </div>
+    <div class="col-md-2">
+        <p><a class="btn btn-default " href="http://workinghunter.com/hu/Allaskeresoknek.aspx">Bővebben</a></p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-10">
+        <h2>Hirdetési lehetőség Vállalkozásoknak!</h2>
+        <p>
+            Hirdesd meg Állásajánlataidat a Workingunteren! Hirdess INGYEN!
+        </p>
+
+    </div>
+    <div class="col-md-2">
+        <p><a class="btn btn-default " href="http://workinghunter.com/hu/Munkaadoknak.aspx">Bővebben</a></p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-10">
+        <h2>Tanulj Nálunk! Légy Te is programozó!</h2>
+        <p>
+           Rengeteg gyakorlat orientált informatikai, programozó tanfolyammal várunk!
+        </p>
+
+    </div>
+    <div class="col-md-2">
+        <p><a class="btn btn-default " href="/InformatikaiTanfolyamok/InformatikaiTanfolyamok">Bővebben</a></p>
+    </div>
+</div>

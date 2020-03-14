@@ -1,0 +1,328 @@
+﻿@using MVC_WH.Models
+@using MVC_WH.App_Code.Attributes
+
+@model jelentkezes_informatikai_tanfolyamraViewModels
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    string GET_param = Request.QueryString["tanfolyam"];
+    htmlJelentkezoLabels ht = new htmlJelentkezoLabels(GET_param);
+}
+
+<h1 class="container">Jelentkezés @ht.getPageTitle_H1Tag() tanfolyamra</h1>
+
+<div class="container-fluid WHContent">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-8" style="border-style:solid;">
+                @using (Html.BeginForm("JelentkezoForm", "InformatikaiTanfolyamok", FormMethod.Post))
+                {
+                    @Html.AntiForgeryToken()
+                    @Html.ValidationSummary("", new { @class = "text-danger" })
+
+
+                    switch (Request.QueryString["tanfolyam"])
+                    {
+                        case "csharp40atipikus":
+                            <input type="hidden" id="courseID" name="courseID" value="csharp40atipikus" /> break;
+                        case "csharp80atipikus":
+                            <input type="hidden" id="courseID" name="courseID" value="csharp80atipikus" /> break;
+                        case "aspdotnet80atipikus":
+                            <input type="hidden" id="courseID" name="courseID" value="aspdotnet80atipikus" /> break;
+                        case "php80atipikus":
+                            <input type="hidden" id="courseID" name="courseID" value="php80atipikus" /> break;
+                        case "linuxtanfolyam":
+                            <input type="hidden" id="courseID" name="courseID" value="linuxtanfolyam" /> break;
+                        case "pythontanfolyam":
+                            <input type="hidden" id="courseID" name="courseID" value="pythontanfolyam" /> break;
+                        default:
+                            <input type="hidden" id="courseID" name="courseID" value="no course" />
+                            break;
+                    }
+
+
+
+
+                    <table>
+                        <tr>
+                            <td><span><strong>Név:</strong></span></td>
+                            <td>@Html.TextBoxFor(m => Model.FullName, new { @class = "form-control" })</td>
+                        </tr>
+
+                        <tr>
+                            <td><span><strong>E-mail:</strong></span></td>
+                            <td>@Html.TextBoxFor(m => Model.Email, new { @class = "form-control" })</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Születési idő:</strong></td>
+                            <td>
+                                <select name="szulEv" id="szulEv" class="form-control yearList">
+                                    <option value="-">-</option>
+                                    <option value="1996">1996</option>
+                                    <option value="1995">1995</option>
+                                    <option value="1994">1994</option>
+                                    <option value="1993">1993</option>
+                                    <option value="1992">1992</option>
+                                    <option value="1991">1991</option>
+                                    <option value="1990">1990</option>
+                                    <option value="1989">1989</option>
+                                    <option value="1988">1988</option>
+                                    <option value="1987">1987</option>
+                                    <option value="1986">1986</option>
+                                    <option value="1985">1985</option>
+                                    <option value="1984">1984</option>
+                                    <option value="1983">1983</option>
+                                    <option value="1982">1982</option>
+                                    <option value="1981">1981</option>
+                                    <option value="1980">1980</option>
+                                    <option value="1979">1979</option>
+                                    <option value="1978">1978</option>
+                                    <option value="1977">1977</option>
+                                    <option value="1976">1976</option>
+                                    <option value="1975">1975</option>
+                                    <option value="1974">1974</option>
+                                    <option value="1973">1973</option>
+                                    <option value="1972">1972</option>
+                                    <option value="1971">1971</option>
+                                    <option value="1970">1970</option>
+                                    <option value="1969">1969</option>
+                                    <option value="1968">1968</option>
+                                    <option value="1967">1967</option>
+                                    <option value="1966">1966</option>
+                                    <option value="1965">1965</option>
+                                    <option value="1964">1964</option>
+                                    <option value="1963">1963</option>
+                                    <option value="1962">1962</option>
+                                    <option value="1961">1961</option>
+                                    <option value="1960">1960</option>
+                                    <option value="1959">1959</option>
+                                    <option value="1958">1958</option>
+                                    <option value="1957">1957</option>
+                                    <option value="1956">1956</option>
+                                    <option value="1955">1955</option>
+                                    <option value="1954">1954</option>
+                                    <option value="1953">1953</option>
+                                    <option value="1952">1952</option>
+                                    <option value="1951">1951</option>
+                                    <option value="1950">1950</option>
+
+                                </select>
+
+                                <select name="szulHonap" id="szulHonap" class="form-control">
+                                    <option value="-">-</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+
+                                </select>
+
+                                <select name="szulNap" id="szulNap" class="form-control">
+                                    <option value="-">-</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                    <option value="21">21</option>
+                                    <option value="22">22</option>
+                                    <option value="23">23</option>
+                                    <option value="24">24</option>
+                                    <option value="25">25</option>
+                                    <option value="26">26</option>
+                                    <option value="27">27</option>
+                                    <option value="28">28</option>
+                                    <option value="29">29</option>
+                                    <option value="30">30</option>
+                                    <option value="31">31</option>
+                                    <option value="32">32</option>
+
+                                </select>
+
+                            </td>
+
+
+                        </tr>
+
+                        <tr>
+                            <td><span><strong>Város:</strong></span></td>
+                            <td>
+                                @Html.TextBoxFor(m => Model.PlaceCity, new { @class = "form-control" })
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td><span><strong>Cím:</strong></span></td>
+                            <td>
+                                @Html.TextBoxFor(m => Model.Address, new { @class = "form-control" })
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td><span><strong>Ország:</strong></span></td>
+                            <td>
+                                <select name="placecountry" id="PlaceCountry" class="form-control">
+                                    <option value="Magyarország">Magyarország</option>
+                                    <option value="Románia">Románia</option>
+                                    <option value="Szlovákia">Szlovákia</option>
+                                    <option value="Ukrajna">Ukrajna</option>
+                                </select>
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td><span><strong>Legmagasabb végzettség:</strong></span></td>
+                            <td>
+                                <select id="HighestEducation" name="HighestEducation" class="form-control">
+                                    <option value="-">-</option>
+                                    <option value="8 általános">8 általános</option>
+                                    <option value="Szakmunkás">Szakmunkás</option>
+                                    <option value="Érettségi">Érettségi</option>
+                                    <option value="OKJ">OKJ</option>
+                                    <option value="Főiskola">Főiskola</option>
+                                    <option value="Egyetem">Egyetem</option>
+
+                                </select>
+
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <span><strong>Telefonszám:</strong></span>
+                            </td>
+                            <td>
+                                <input type="text" id="TelephoneNumber" name="TelephoneNumber" class="form-control" />
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td><span><strong>Számlázási cím:</strong></span></td>
+                            <td>
+                                <input id="UjSzamlazasiCim" type="checkbox" name="UjSzamlazasiCim" class="" />
+                            </td>
+                        </tr>
+
+                        <tr class="hideTR">
+                            <td><b>Számlázási név:</b></td>
+                            <td>
+                                <input name="SzamlazasiNev" type="text" id="SzamlazasiNev" class="form-control" />
+                            </td>
+                        </tr>
+
+                        <tr class="hideTR">
+                            <td><b>Számlázási cím:</b></td>
+                            <td>
+                                <input name="SzamlazasiCim" type="text" id="SzamlazasiCim" class="form-control" />
+                            </td>
+                        </tr>
+
+                        <tr class="hideTR">
+                            <td><b>Adószám:(vállalkozóknak/vállalkozásoknak)</b></td>
+                            <td>
+                                <input name="TaxNumber" type="text" id="TaxNumber" class="form-control" />
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td><b>Megjegyzés:</b></td>
+                            <td>
+                                <textarea name="Megjegyzes" rows="10" cols="35" id="Megjegyzes"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                @Html.CheckBoxFor(m => Model.Gdpr)
+                                <a href="http://workinghunter.com/infotanf-adatvedelmi-tajekoztato.aspx" target="_blank">Itt tekintheted meg az Adatévelmi tájékoztatót!</a>
+                                <label>Kérjük, hogy figyelmesen olvasd el az Adatvédelmi tájékoztatónkat. A tájékoztatóból megtudhatod, hogy hogyan kezeljük és védjük adataidat!A mező elfogadásával megerősíted,  hogy elolvastad és elfogadod azt! Hozzájárulsz személyes adataid kezeléséhez!</label>
+                            </td>
+
+                            <span id="custCheck" style="visibility:hidden;">Check CheckBox</span>
+
+                        </tr>
+
+                        <tr>
+                            <td colspan="2">
+                                @Html.CheckBoxFor(m => Model.TermsAndConditions)
+                                @Html.ValidationMessageFor(m => Model.TermsAndConditions)
+                                <a href="http://workinghunter.com/infotanf-altalanos-szerzodesi-feltetelek.aspx" target="_blank">Itt tekintheted meg az Általános Szerződési Feltételeket!</a>
+                                <label>Kérjük, hogy figyelmesen olvasd el az ÁSZF-et. A ÁSZF-ből megtudhatod a Szoláltatással kapcsolatos összes részletet!A mező elfogadásával megerősíted,  hogy elolvastad és elfogadod azt!</label>
+
+
+                            </td>
+
+                            <span id="CustomValidator2" style="visibility:hidden;">Check CheckBox</span>
+
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td>
+                                <input type="submit" name="Submit" value="Jelentkezés" class="form-control" />
+                            </td>
+
+                        </tr>
+
+
+
+                    </table>
+                }
+
+            </div>
+
+            <div class="col-md-4" style="border-style:dotted;">
+
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
+<script>
+
+    $(document).ready(function () {
+
+        ($("input#UjSzamlazasiCim").change(function () {
+            if ($("input#UjSzamlazasiCim").prop("checked")) {
+                $(".hideTR").show();
+            } else { $(".hideTR").hide(); }
+        }));
+
+
+
+    });
+</script>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

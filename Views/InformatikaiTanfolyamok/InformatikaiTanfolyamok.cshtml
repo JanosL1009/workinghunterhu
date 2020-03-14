@@ -1,0 +1,54 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<div class="container-fluid">
+   
+        <div class="container LeftContainer">
+            <div class="row">
+                <div class="col-xs-8">
+                    <h1>Tanfolyamok</h1>
+                    <div class="col-sm-12 leftCol">
+                        <section class="row">
+                            <h3 class="col-sm-12 CourseArticleTitle">@Html.ActionLink("C# programozási tanfolyam - online + 80 óra gyakorlat", "Csharp_Programozo_Tanfolyam","InformatikaiTanfolyamok",new { @class = "courseLinks", target = "_blank" } )<span class="arAkcios"> 128 990 FT helyett 109 790FT!</span></h3>
+                            <div class="col-sm-12">
+                                <img class="img-thumbnail" src="~/Content/Img/csharp-programozas-tanfolyam.jpg" style="margin:0 auto;" />
+                            </div>
+                        </section>
+                        <hr />
+                        <section class="row">
+                            <h3 class="col-sm-12 CourseArticleTitle">@Html.ActionLink("ASP.NET webprogramozó tanfolyam - onlie + 80 óra gyakorlat", "AspNet_wwebpogramozo_tanfolyam", "InformatikaiTanfolyamok", new { @class = "courseLinks", target = "_blank" })</h3>
+                            <img class="img-thumbnail" src="~/Content/Img/asp-dot-net-webprogramozasi-tanfolyam.jpg" />
+                        </section>
+                        <hr />
+                        <section class="row">
+                            <h3 class="col-sm-12 CourseArticleTitle">@Html.ActionLink("Kezdő linux tanfolyam", "kezdo_linux_tanfolyam", "InformatikaiTanfolyamok", new { @class = "courseLinks", target = "_blank" })</h3>
+                            <img class="img-thumbnail" src="~/Content/Img/linux_distros-workinghunter-linux-tanfolyam.png" height="500" />
+                        </section>
+                        <hr />
+                        <section class="row">
+                            <h3 class="col-sm-12 CourseArticleTitle">@Html.ActionLink("PHP webprogramozó tanfolyam - online + 80 óra gyakorlat", "php_webprogramozo_tanfolyam", "InformatikaiTanfolyamok", new { @class = "courseLinks" , target = "_blank"})</h3>
+                            <img class="img-thumbnail  phpTanf" src="~/Content/Img/php-html-it-tanfolyam.jpg" />
+                        </section>
+
+                    </div>
+                </div>
+
+                <div class="col-xs-4">
+                    @Html.Partial("_TanfolyamOldalsoMenu")
+
+
+                </div>
+
+
+            </div>
+       
+
+                
+            
+
+        </div>
+   
+</div>
