@@ -84,11 +84,18 @@ namespace MVC_WH.Models
         [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
         
-        
-        [Display(Name = "Birth Year")]
+        /*
+        a nagy gépen egy build+deployt ra vagni es jo lesz
+        [Display(Name = "Születési év")]
         public string BirthYear { get; set; }
 
+        [Display(Name = "Hónap")]
+        public string BirthMonth { get; set; }
 
+        [Display(Name = "Születési nap")]
+        public string BirthDay { get; set; }
+
+*/
     }
 
     public class ResetPasswordViewModel

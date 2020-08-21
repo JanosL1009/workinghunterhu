@@ -6,10 +6,10 @@
 
 <h2>@ViewBag.Title.</h2>
 
-@using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+@using (Html.BeginForm("Fiók létrehozása", "Account", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
 {
     @Html.AntiForgeryToken()
-    <h4>Create a new account.</h4>
+    <h4>Hozz létre egy fiókot és vadászd le a legjobb állásokat!</h4>
     <hr />
     @Html.ValidationSummary("", new { @class = "text-danger" })
     <div class="form-group">
@@ -32,18 +32,46 @@
     </div>
     <div class="form-group">
         @Html.LabelFor(m => m.BirthYear, new { @class = "col-md-2 control-label" })
-        <select id="birthDateYear" >
-            <option selected>1988</option><option>1989</option><option>1990</option><option>1991</option><option>1992</option>
-
+        <select class="form-control" id="birthDateYear">
+            <option value="" selected disabled>-- Kérjük válassz --</option>
+           @for (int i = 2004; i >= 1935; i--)
+           {
+            <option value="@i">@i</option>   
+           }
         </select>
     </div>
+
+    <div class="form-group">
+        
+        <select class="form-control" id="birthDateYear">
+            <option value="" selected disabled> --- </option>
+           @for (int i = 1; i > 13; i++)
+           {
+            <option value="@i">@i</option>   
+           }
+        </select>
+    </div>
+    <!-- ezeket megformazni -->
    
     <div class="form-group">
         <div class="col-md-offset-2 col-md-10">
-            <input type="submit" class="btn btn-default" value="Register" />
+            <input type="submit" class="btn btn-default" value="Fiók létrehozása" />
         </div>
     </div>
 }
+
+<script>
+function dateuploader()
+{
+    console.log('i');
+    for(let i = 1935; i < 2005;i++)
+    {
+        console.log(i);
+        let item = '<option >'+i+'</option>';
+        document.getElementById("birthDateYear").innerHTML = item;
+    }
+}
+</script>
 
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
